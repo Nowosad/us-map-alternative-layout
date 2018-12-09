@@ -1,7 +1,7 @@
 Alternative layout for maps of United States
 ================
 
-![](figs/us_albers_alt.png)<!-- -->
+<img src="figs/us_albers_alt.png" height="400" style="display: block; margin: auto;" />
 
 Maps of the United States often focus only on the contiguous 48 states.
 In many maps, Alaska and Hawaii are simply not shown or are displayed at

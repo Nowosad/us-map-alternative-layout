@@ -7,8 +7,8 @@ output: github_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-```{r, echo=FALSE}
-knitr::include_graphics("figs/us_albers_alt.png")
+```{r, echo=FALSE, fig.align='center', out.height=400}
+knitr::include_graphics("figs/us_albers_alt.png", dpi = NA)
 ```
 
 Maps of the United States often focus only on the contiguous 48 states. 
