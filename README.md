@@ -1,4 +1,4 @@
-Alternative layout for maps of United States
+Alternative layout for maps of the United States
 ================
 
 <img src="figs/us_albers_alt.png" height="400" style="display: block; margin: auto;" />

@@ -1,5 +1,5 @@
 ---
-title: "Alternative layout for maps of United States"
+title: "Alternative layout for maps of the United States"
 output: github_document
 ---
 
