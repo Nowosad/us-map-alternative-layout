@@ -34,13 +34,13 @@ us_lower48 = us_states %>%
 # prepare alaska ----------------------------------------------------------
 alaska2 = alaska %>% 
   st_transform(crs_alaska) %>% 
-  mutate(geometry = place_geometry(geometry, st_bbox(us_lower48), 0.6, 1.4)) %>% 
+  mutate(geometry = place_geometry(geometry, st_bbox(us_lower48), 0.6, 1.35)) %>% 
   st_set_crs(crs_lower48)
 
 # prepare hawaii ----------------------------------------------------------
 hawaii2 = hawaii %>% 
   st_transform(crs_hawaii) %>% 
-  mutate(geometry = place_geometry(geometry, st_bbox(us_lower48), 0.5, -0.15)) %>% 
+  mutate(geometry = place_geometry(geometry, st_bbox(us_lower48), 0.2, 0.1)) %>% 
   st_set_crs(crs_lower48)
 
 # combine data ------------------------------------------------------------
@@ -51,14 +51,16 @@ tm1 = tm_shape(us_albers_alt) +
   tm_polygons(col = "#0CE878", 
               border.col = "black", lwd = 0.5)
 
+# tm1
+
 dir.create("figs")
 tmap_save(tm1, "figs/us_albers_alt.png",
           height = 1000, width = 824)
 # save --------------------------------------------------------------------
 dir.create("data")
 saveRDS(us_albers_alt, "data/us_albers_alt.rds")
-st_write(us_albers_alt, "data/us_albers_alt.gpkg")
+st_write(us_albers_alt, "data/us_albers_alt.gpkg", delete_dsn = TRUE)
 
 dir.create("data/shp")
-st_write(us_albers_alt, "data/shp/us_albers_alt.shp")
+st_write(us_albers_alt, "data/shp/us_albers_alt.shp", delete_dsn = TRUE)
 zip(zipfile = "data/us_albers_alt_shp.zip", files = dir("data/shp", full.names = TRUE), flags = "-j")
