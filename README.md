@@ -1,6 +1,8 @@
 Alternative layout for maps of the United States
 ================
 
+[![DOI](https://zenodo.org/badge/161046120.svg)](https://zenodo.org/badge/latestdoi/161046120)
+
 <img src="figs/us_albers_alt.png" height="400" style="display: block; margin: auto;" />
 
 Maps of the United States often focus only on the contiguous 48 states.

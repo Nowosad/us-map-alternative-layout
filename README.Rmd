@@ -7,6 +7,8 @@ output: github_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+[![DOI](https://zenodo.org/badge/161046120.svg)](https://zenodo.org/badge/latestdoi/161046120)
+
 ```{r, echo=FALSE, fig.align='center', out.height=400}
 knitr::include_graphics("figs/us_albers_alt.png", dpi = NA)
 ```
