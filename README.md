@@ -14,8 +14,8 @@ ensures relative sizes are preserved.
 
 ## Data
 
-Spatial data allowing for alternative visualizations of United States is
-available in:
+Spatial data allowing for alternative visualizations of the United
+States is available in:
 
   - [GeoPackage
     format](https://github.com/Nowosad/us-map-alternative-layout/raw/master/data/us_albers_alt.gpkg)
